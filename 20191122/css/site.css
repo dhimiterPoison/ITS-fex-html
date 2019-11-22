@@ -1,0 +1,32 @@
+a{
+    color: green;
+}
+a:visited{
+    color: gray;
+}
+a:hover{
+    text-decoration: none;
+    background-color: yellow;
+    color: black;
+}
+a:active{
+    color: red;
+}
+
+p:hover{
+    color: gray;
+}
+
+table{
+    border: 1px solid red;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table tr td {
+    border: 1px solid blue;
+}
+
+table tbody tr:hover {
+    background-color: yellow;
+}
