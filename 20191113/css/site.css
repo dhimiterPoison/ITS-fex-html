@@ -22,5 +22,6 @@ div p{
 .sectionMain .textContent p,
 .titleYellow.small{
     border: 1px solid black;
+    border-color: #eee;
     margin: 10px;
 }
