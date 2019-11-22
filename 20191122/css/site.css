@@ -30,3 +30,17 @@ table tr td {
 table tbody tr:hover {
     background-color: yellow;
 }
+
+body{
+    /*
+    background-color: yellowgreen;
+    background-image: url(../images/pippo.png);
+    background-repeat: repeat-y;
+*/
+}
+
+#image{
+    position: relative;
+    top: -300px;
+    
+}

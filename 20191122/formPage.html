@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <form action="users/create" method="POST">
+
+        <label for="txtName">Nome:</label>
+        <input type="text" name="firstName" id="txtName">
+
+        <br>
+        <label>
+            Cognome:
+            <input type="text" name="lastName">
+        </label>
+
+        <br>
+
+        <label>
+            <input type="checkbox" name="privacy">
+            Accetto la privacy
+        </label>
+
+        <br>
+
+        <label>
+            <input type="radio" value="M" name="sex">
+            Maschio
+        </label>
+        <label>
+            <input type="radio" value="F" name="sex">
+            Femmina
+        </label>
+        <label>
+            <input type="radio" value="A" name="sex">
+            Altro
+        </label>
+
+        <br>
+        <select name="city">
+            <option></option>
+            <option value="TV">Treviso</option>
+            <option value="PN">Pordenone</option>
+        </select>
+
+        <br>
+        <button type="submit">Salva</button>
+    </form>
+
+
+
+</body>
+
+</html>
