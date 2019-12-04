@@ -1,0 +1,46 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.w30{
+    float: left;
+    width: 30%;
+}
+.w50{
+    float: left;
+    width: 50%;
+}
+.w70{
+    float: left;
+    width: 70%;
+}
+.panel-content{
+    margin: 10px;
+}
+
+nav.menu ul{
+    padding-left: 10px;
+    list-style-type: none;
+}
+nav.menu ul li {
+    float: left;
+}
+nav.menu a{
+    margin-right: 30px;
+    color: #0099FF;
+}
+
+.clear{
+    clear: both;
+}
+
+input{
+    width: 100%;
+}
+.btn-login{
+    border: 1px solid blue;
+    background-color: #0099FF;
+    padding: 5px 10px 5px 10px;
+    color: #fff;
+    margin-top:10px;
+}
