@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calcolatrice</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+
+                <div class="row mt-3">
+                    <div class="col-9">
+                        <input class="form-control" id="txtDisplay" disabled>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-danger btn-block" onclick="clearCalc()">C</button>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <button type="button" class="btn btn-primary btn-block" onclick="pressNum('7')">7</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary btn-block" onclick="pressNum('8')">8</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary btn-block" onclick="pressNum('9')">9</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-secondary btn-block" onclick="pressOp('/')">/</button>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col">
+                        <button type="button" class="btn btn-primary btn-block" onclick="pressNum('4')">4</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary btn-block" onclick="pressNum('5')">5</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary btn-block" onclick="pressNum('6')">6</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-secondary btn-block" onclick="pressOp('*')">*</button>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col">
+                        <button type="button" class="btn btn-primary btn-block" onclick="pressNum('1')">1</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary btn-block" onclick="pressNum('2')">2</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary btn-block" onclick="pressNum('3')">3</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-secondary btn-block" onclick="pressOp('-')">-</button>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col">
+                        
+                    </div>
+                    <div class="col">
+                        <button 
+                            type="button" 
+                            class="btn btn-primary btn-block"
+                            onclick="pressNum('0')">0</button>
+                    </div>
+                    <div class="col">
+                        <button 
+                            type="button" 
+                            class="btn btn-info btn-block"
+                            onclick="calculate()">=</button>
+                    </div>
+                    <div class="col">
+                        <button 
+                            type="button" 
+                            class="btn btn-secondary btn-block"
+                            onclick="pressOp('+')">+</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="js/calc.js"></script>
+</body>
+</html>

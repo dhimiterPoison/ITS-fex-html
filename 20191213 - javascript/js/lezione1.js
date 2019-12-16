@@ -112,3 +112,4 @@ function txtWrite(text){
     inputTxt.value = inputTxt.value + text;
     divPnl.innerHTML =  divPnl.innerHTML+ text;
 }
+
