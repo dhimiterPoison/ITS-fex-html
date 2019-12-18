@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="pnlOutput"></div>
+
+<script>
+    var pnl = document.getElementById("pnlOutput");
+
+    fetch('https://swapi.co/api/people').then(function(response) {
+        return response.json();
+    }).then(function(data) {
+        console.log(data);
+
+        for (let i = 0; i < data.results.length; i++) {
+            const person = data.results[i];
+            console.log(person.name);
+            render(person);
+        }
+    });
+
+    function render(person){
+        var text = document.createElement("p");
+        text.innerHTML = person.name;
+        pnl.appendChild(text);
+    }
+</script>
+
+</body>
+</html>

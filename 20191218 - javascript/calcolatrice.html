@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Colcolatrice addEventListener</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+
+                <div class="row mt-3">
+                    <div class="col-9">
+                        <input class="form-control" id="txtDisplay" disabled>
+                    </div>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-outline-danger btn-block" id="btnClear">C</button>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <button type="button" class="btn btn-primary btn-block btn-num">7</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary btn-block btn-num">8</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary btn-block btn-num">9</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-secondary btn-block btn-op">/</button>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col">
+                        <button type="button" class="btn btn-primary btn-block btn-num">4</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary btn-block btn-num">5</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary btn-block btn-num">6</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-secondary btn-block btn-op">*</button>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col">
+                        <button type="button" class="btn btn-primary btn-block btn-num">1</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary btn-block btn-num">2</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary btn-block btn-num">3</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-secondary btn-block btn-op">-</button>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col">
+                        
+                    </div>
+                    <div class="col">
+                        <button 
+                            type="button" 
+                            class="btn btn-primary btn-block btn-num">0</button>
+                    </div>
+                    <div class="col">
+                        <button 
+                            type="button" 
+                            class="btn btn-info btn-block" id="btnExecute">=</button>
+                    </div>
+                    <div class="col">
+                        <button 
+                            type="button" 
+                            class="btn btn-secondary btn-block btn-op">+</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="js/calc.js"></script>
+</body>
+</html>
