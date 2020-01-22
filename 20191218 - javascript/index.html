@@ -26,9 +26,26 @@
     });
 
     function render(person){
-        var text = document.createElement("p");
-        text.innerHTML = person.name;
-        pnl.appendChild(text);
+        // var text = document.createElement("p");
+        // text.innerHTML = person.name;
+        // pnl.appendChild(text);
+
+
+        var card = document.createElement("div");
+        card.classList.add("card");
+
+        var body = document.createElement("div");
+        body.classList.add("card-body")
+        card.appendChild(body);
+
+        var title = document.createElement("h5");
+        title.classList.add("card-title");
+        title.innerHTML = person.name;
+        body.appendChild(title);
+
+        pnl.appendChild(card);
+
+
     }
 </script>
 
