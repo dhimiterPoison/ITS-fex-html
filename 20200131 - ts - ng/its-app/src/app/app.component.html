@@ -1,0 +1,32 @@
+
+
+<input type="text" #txtText value="its" (keyup)="true">
+
+<button type="button"   
+      [disabled]="txtText.value.length == 0"
+      (click)="txtText.value = ''">reset</button>
+<button type="button"   
+      [disabled]="txtText.value.length == 0"
+      (click)="title = txtText.value">set title</button>
+
+<p>
+{{txtText.value}}
+</p>
+<hr>
+<input type="text" [(ngModel)]="title">
+<p>{{title}}</p>
+<button type="button" 
+        (click)="resetTitle()">reset title</button>
+
+<hr>
+<button type="button"
+    (click)="list.push(title)">add</button>
+<button type="button"
+    (click)="list.splice(0, list.length)">reset</button>
+
+<div *ngIf="list.length > 0">
+  <h2>Lista:</h2>
+  <ul>
+    <li *ngFor="let s of list">{{s}}</li>
+  </ul>
+</div>
