@@ -1,10 +1,6 @@
 <h1>{{title}}</h1>
 
-
-<input type="text" #txt (keyup)="0">
-<button type="button" 
-        (click)="add(txt.value)"
-        [disabled]="txt.value.length == 0">Aggiungi</button> 
+<app-text-insert (adding)="add($event)"></app-text-insert>
 
 <div *ngFor="let s of list">
     <app-its-panel 

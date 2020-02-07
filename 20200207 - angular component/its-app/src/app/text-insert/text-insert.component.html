@@ -1,0 +1,4 @@
+<input type="text" #txt (keyup)="0">
+<button type="button" 
+        (click)="add(txt.value)"
+        [disabled]="txt.value.length == 0">Aggiungi</button> 
