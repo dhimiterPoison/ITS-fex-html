@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { SwapiApiService } from './swapi-api.service';
+import { SwPerson } from './swapi-models';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +10,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'esercitazione con componenti';
   list: string[] = [];
+  swList: SwPerson[] = [];
+
+  constructor(private swapi: SwapiApiService) {
+    swapi.getPeople().subscribe((data) => {
+      this.swList = data.results;
+    });
+  }
 
   add = (text: string) => {
     if (text)

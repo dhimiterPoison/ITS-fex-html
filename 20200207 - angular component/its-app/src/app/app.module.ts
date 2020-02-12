@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ItsPanelComponent } from './its-panel/its-panel.component';
 import { TextInsertComponent } from './text-insert/text-insert.component';
@@ -12,7 +12,8 @@ import { TextInsertComponent } from './text-insert/text-insert.component';
     TextInsertComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
