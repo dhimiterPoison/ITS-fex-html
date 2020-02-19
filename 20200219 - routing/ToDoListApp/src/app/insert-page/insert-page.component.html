@@ -1,1 +1,14 @@
-<p>insert-page works!</p>
+<h2>Inserimento nuovo elemento</h2>
+
+Assigned to:
+<select [(ngModel)]="item.assignedTo">
+    <option></option>
+    <option value="Andrea">Andrea</option>
+    <option value="Pippo">Pippo</option>
+    <option value="Pluto">Pluto</option>
+</select>
+<br>
+Description: 
+<input [(ngModel)]="item.description">
+<br>
+<button type="button" (click)="save()">Salva</button>

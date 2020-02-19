@@ -9,6 +9,12 @@ import { InsertPageComponent } from './insert-page/insert-page.component';
 import { ListPageComponent } from './list-page/list-page.component';
 import { DetailsPageComponent } from './details-page/details-page.component';
 
+import { registerLocaleData } from '@angular/common';
+import localeIt from '@angular/common/locales/it';
+import { FormsModule } from '@angular/forms';
+
+registerLocaleData(localeIt);
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +26,8 @@ import { DetailsPageComponent } from './details-page/details-page.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

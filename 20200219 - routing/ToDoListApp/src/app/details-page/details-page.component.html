@@ -5,6 +5,6 @@
         <br>
         Status: {{item.status}}
         <br>
-        Creation: {{item.createdDate}}
+        Creation: {{item.createdDate | date : 'short': null: 'it'}}
     </p>
 </div>
