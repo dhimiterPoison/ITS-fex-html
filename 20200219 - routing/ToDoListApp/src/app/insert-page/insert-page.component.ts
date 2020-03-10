@@ -19,7 +19,7 @@ export class InsertPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  save = () => {
+  onSubmit = () => {
     this.item.status = 'created';
     this.item.createdDate = new Date().getTime();
 

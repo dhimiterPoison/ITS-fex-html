@@ -1,14 +1,27 @@
 <h2>Inserimento nuovo elemento</h2>
 
-Assigned to:
-<select [(ngModel)]="item.assignedTo">
-    <option></option>
-    <option value="Andrea">Andrea</option>
-    <option value="Pippo">Pippo</option>
-    <option value="Pluto">Pluto</option>
-</select>
-<br>
-Description: 
-<input [(ngModel)]="item.description">
-<br>
-<button type="button" (click)="save()">Salva</button>
+<form name="insertForm" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
+
+    Assigned to:
+    <select [(ngModel)]="item.assignedTo" name="assignedTo">
+        <option></option>
+        <option value="Andrea">Andrea</option>
+        <option value="Pippo">Pippo</option>
+        <option value="Pluto">Pluto</option>
+    </select>
+    <br>
+    Description: 
+    <input [(ngModel)]="item.description" name="description" #description="ngModel"  required minlength="4">
+    <div *ngIf="description.invalid && (description.dirty || description.touched)"
+        class="alert alert-danger">
+
+    <div *ngIf="description.errors.required">
+        Name is required.
+    </div>
+    <div *ngIf="description.errors.minlength">
+        Name must be at least 4 characters long.
+    </div>
+    </div>
+    <br>
+    <button type="submit">Salva</button>
+</form>
