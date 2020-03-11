@@ -1,0 +1,24 @@
+<h2>Inserimento</h2>
+
+
+<form name="insertForm" #f="ngForm" (ngSubmit)="f.form.valid && save()">
+
+    <label for="description">Descrizione</label>
+    <input type="text" 
+        name="description" 
+        id="description"
+        #description="ngModel"
+        [(ngModel)]="item.description"
+        required minlength="5">
+    <div style="color: red;" *ngIf="description.invalid && (description.dirty || description.touched)">
+        <div *ngIf="description.errors.required">
+            Campo 'descrizione' obbligatorio.
+        </div>
+        <div *ngIf="description.errors.minlength">
+            Il campo 'descrizione' deve essere lungo almeno 5 caratteri.
+        </div>
+    </div>
+
+    <button type="submit">Salva</button>
+
+</form>

@@ -1,0 +1,9 @@
+<h2>Elenco TODO Items</h2>
+
+<div *ngFor="let item of list">
+    <h3>{{item.description}}</h3>
+    <p>Creato il {{item.createdDate | date}}</p>
+    <a [routerLink]="['/details', item.id]">vai al dettaglio</a>
+    <hr>
+</div>
+
