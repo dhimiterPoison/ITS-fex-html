@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-const CLIENT_ID =  "1050314840809-k4ejm93vum2hg99ncnq61gb3uof0se20.apps.googleusercontent.com";
-const API_KEY = "AIzaSyBo55YJ-S0MKeDWQVY3DrFIQ5ovUAXdCjo";
+const CLIENT_ID =  "xxxxx-k4ejm93vum2hg99ncnq61gb3uof0se20.apps.googleusercontent.com";
+const API_KEY = "xxxx-S0MKeDWQVY3DrFIQ5ovUAXdCjo";
 const DISCOVERY_DOCS = [ "https://www.googleapis.com/discovery/v1/apis/drive/v3/rest"];
 const SCOPES = "https://www.googleapis.com/auth/drive";
 
