@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ITS - vue.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+    <div id="app">
+      <ol>
+        <li v-for="person in list">
+          {{ person.name }}
+        </li>
+      </ol>
+    </div>
+
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          list: [],
+        },
+        mounted() {
+          fetch("https://swapi.co/api/people/")
+            .then((response) => {
+              return response.json();
+            })
+            .then((response) => {
+              this.list = response.results;
+            });
+        },
+      });
+    </script>
+  </body>
+</html>
