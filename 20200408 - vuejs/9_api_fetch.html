@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ITS - vue.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+    <div id="app">
+      <ol>
+        <li v-for="eq in list">
+          {{ eq.properties.title }}
+        </li>
+      </ol>
+    </div>
+
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          list: [],
+        },
+        mounted() {
+          fetch("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson")
+            .then((response) => {
+              return response.json();
+            })
+            .then((response) => {
+              this.list = response.features;
+            });
+        },
+      });
+    </script>
+  </body>
+</html>

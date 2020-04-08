@@ -8,7 +8,8 @@
   </head>
   <body>
     <div id="app">
-      {{ message }}
+      {{message}}
+      <p>{{title}}</p>
     </div>
 
     <script>
@@ -16,6 +17,7 @@
         el: "#app",
         data: {
           message: "Hello Vue!",
+          title: "ciao ITS"
         },
       });
     </script>
